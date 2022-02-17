@@ -208,9 +208,6 @@ export default defineComponent({
     }
     .resetButton {
       background-color: #ceadce;
-      &:hover {
-        background-color: #7f667f;
-      }
     }
   }
 }
