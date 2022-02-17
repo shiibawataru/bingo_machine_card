@@ -156,7 +156,7 @@ export default defineComponent({
      */
     const reset = () => {
       //リセット確認用メッセージ
-      confirmReset.value = window.confirm("リセットしてもよろしいですか？");
+      confirmReset.value = window.confirm("Are you sure you want to reset?");
       if (confirmReset.value === true) {
         //タイマーを止める
         clearInterval(timer.value);
@@ -228,9 +228,11 @@ export default defineComponent({
   }
   .button {
     margin: 0 10px 20px;
+
     button {
       font-size: 200%;
       margin: 0 20px;
+
       border-radius: 10px;
       color: white;
     }
