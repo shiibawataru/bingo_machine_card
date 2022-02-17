@@ -1,9 +1,16 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <header>
+    <div><h1>Bingo</h1></div>
+    <ul>
+      <router-link to="/" active-class="link--active"
+        ><li>Bingo Machine</li></router-link
+      >
+      <router-link to="/card" active-class="link--active"
+        ><li class="card">Card</li></router-link
+      >
+    </ul>
+  </header>
+  <router-view />
 </template>
 
 <style lang="scss">
@@ -15,16 +22,34 @@
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+header {
+  width: 100%;
+  color: white;
+  h1 {
+    background-color: #cc3399;
+    height: 50px;
+    margin: 0;
+  }
+  ul {
+    margin: 0;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+    height: 25px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    a {
+      width: 50%;
+      color: #cc3399;
+      font-weight: 900;
+      text-decoration: none;
+    }
+    .link--active {
+      background-color: #cc3399;
+      color: white;
     }
   }
+}
+body {
+  margin: 0;
 }
 </style>
