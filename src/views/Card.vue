@@ -197,7 +197,6 @@ export default defineComponent({
   }
   .button {
     margin: 20px;
-    // margin: 0 10px 20px;
     button {
       font-size: 200%;
       margin: 0 20px;
@@ -205,12 +204,7 @@ export default defineComponent({
       color: white;
     }
     .shuffleButton {
-      background-color: white;
-      color: #cc3399;
-      &:hover {
-        background-color: #cc3399;
-        color: white;
-      }
+      background-color: #cc3399;
     }
     .resetButton {
       background-color: #ceadce;

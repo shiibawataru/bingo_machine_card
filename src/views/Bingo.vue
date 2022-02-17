@@ -232,25 +232,14 @@ export default defineComponent({
     button {
       font-size: 200%;
       margin: 0 20px;
-
       border-radius: 10px;
       color: white;
     }
     .startButton {
-      background-color: white;
-      color: #cc3399;
-      &:hover {
-        background-color: #cc3399;
-        color: white;
-      }
+      background-color: #cc3399;
     }
     .resetButton {
-      // background-color: #999999;
       background-color: #ceadce;
-      &:hover {
-        // background-color: #555555;
-        background-color: #7f667f;
-      }
     }
   }
   .random {
