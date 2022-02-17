@@ -61,9 +61,6 @@ export default defineComponent({
   align-items: center;
   border: solid 1px;
   border-radius: 35% 35% 0 0;
-  &:hover {
-    background-color: #ffddff;
-  }
 }
 .numberColor {
   background-color: #bb1e5e;
