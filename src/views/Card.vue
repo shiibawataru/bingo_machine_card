@@ -125,7 +125,7 @@ export default defineComponent({
      */
     const onReset = () => {
       //確認メッセージ
-      confirmReset.value = window.confirm("リセットしてもよろしいですか？");
+      confirmReset.value = window.confirm("Are you sure you want to reset?");
       if (confirmReset.value === true) {
         //ストアのカード用配列を初期化
         store.commit("resetCard");
